@@ -4,15 +4,23 @@ services:
     image: maddy777/moviesrepopaytm:latest
     ports:
       - "80:80"
+    deploy: 
+      replicas: 3
   train:
     image: maddy777/trainrepopaytm:latest
     ports:
       - "81:80"
+    deploy: 
+      replicas: 3
   dth:
     image: maddy777/dthrepopaytm:latest
     ports:
       - "82:80"
+    deploy: 
+      replicas: 3
   recharge:
     image: maddy777/rechargerepopaytm:latest
     ports:
       - "83:80"
+    deploy: 
+      replicas: 3
